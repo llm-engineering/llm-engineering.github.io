@@ -1345,26 +1345,36 @@ ninja-keys::part(ninja-input-wrapper) {
 
 // custom
 @keyframes cycle-words {
-    0% { content: "Lean "; }
-    25% { content: "Light "; }
-    50% { content: "Logical "; }
-    75% { content: "Latent "; }
-    100% { content: "Lean "; }
+  0% {
+    content: "Lean ";
+  }
+  25% {
+    content: "Light ";
+  }
+  50% {
+    content: "Logical ";
+  }
+  75% {
+    content: "Latent ";
+  }
+  100% {
+    content: "Lean ";
+  }
 }
 
 .llm-container {
-    font-size: 2rem;
-    font-weight: bold;
-    display: flex;
-    justify-content: center; 
-    align-items: center; 
-    height: 100vh;
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
 }
 
 .llm-text::after {
-    content: "";
-    animation: cycle-words 4s infinite linear; 
-    color: #007BFF;
+  content: "";
+  animation: cycle-words 4s infinite linear;
+  color: #007bff;
 }
